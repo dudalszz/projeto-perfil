@@ -1,24 +1,27 @@
 # Perfil Profissional
 
-Este projeto foi desenvolvido como atividade prática do curso de Desenvolvimento Web. O objetivo é criar uma página de perfil pessoal utilizando HTML5 semântico, CSS moderno e técnicas de responsividade.
+Este projeto é uma página de perfil pessoal desenvolvida como atividade prática do curso **Desenvolvimento Full Stack Jr.** oferecido pela +praTI & Codifica. O objetivo principal é aplicar conceitos modernos de desenvolvimento web para criar um portfólio funcional e visualmente atraente.
 
 ## 🧩 Propósito
 
-Apresentar um perfil pessoal com foco na interseção entre **tecnologia** e **administração**, destacando habilidades voltadas à **gestão de projetos** e ao desenvolvimento de um repertório técnico abrangente nas áreas de TI.
+Apresentar minhas habilidades, conhecimentos e projetos de forma organizada, destacando a evolução técnica adquirida durante o curso. Essa página serve como um portfólio inicial para futuros processos seletivos e networking profissional.
 
-## 🛠️ Tecnologias utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-- HTML5
-- CSS3 (Flexbox, variáveis, gradientes, transições)
-- Google Fonts
-- Git & GitHub
+- HTML5 semântico para estrutura clara e acessível
+- CSS3 moderno com Flexbox, variáveis CSS, gradientes e transições suaves
+- Google Fonts para tipografia personalizada
+- Git e GitHub para controle de versão e hospedagem do código
 
-## ✨ Funcionalidades
+## ✨ Funcionalidades e Diferenciais
 
-- Estruturação com HTML semântico
-- Estilo visual escuro com toques de roxo
-- Responsividade para dispositivos móveis
-- Transições suaves e gradientes
-- Navegação por seções
+- Navegação interna fluida e intuitiva por seções (Sobre, Habilidades, Projetos e Contato)
+- Design responsivo, garantindo boa experiência em dispositivos móveis e desktops
+- Tema escuro com detalhes em roxo para um visual moderno e profissional
+- Ícones representativos para melhor usabilidade e impacto visual
+- Código organizado, limpo e comentado para fácil manutenção e evolução
 
-Feito com 💻 por Maria Eduarda
+---
+
+Sinta-se à vontade para explorar o código e contribuir com sugestões ou melhorias!
+
