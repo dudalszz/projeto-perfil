@@ -2,22 +2,22 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Perfil | Maria Eduarda Souza</title>
-  <link rel="stylesheet" href="styles.css" />
   <link rel="shortcut icon" href="/1749255213275.jpg" type="image/x-icon" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <!-- Font Awesome para ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
+
   <header class="cabecalho">
     <img class="foto-perfil" src="/1749255213275.jpg" alt="Foto de Maria Eduarda Souza" />
     <h1 class="nome">Maria Eduarda Souza</h1>
-    <p class="slogan">Administração e tecnologia, com paixão por inovação</p>
+    <p class="slogan">Gestão de Projetos | Paixão por Tecnologia e Inovação</p>
   </header>
 
-  <nav class="menu-navegacao" aria-label="Menu de navegação principal">
+  <nav class="menu-navegacao" id="menu">
     <ul>
       <li><a href="#sobre"><i class="fas fa-user"></i> Sobre</a></li>
       <li><a href="#habilidades"><i class="fas fa-code"></i> Habilidades</a></li>
@@ -120,5 +120,18 @@
   <footer class="rodape">
     <p>&copy; 2025 <span class="destaque">Maria Eduarda Souza</span>. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    const menu = document.getElementById('menu');
+    const alturaScrollParaDescer = 10; // desce logo que o scroll passar 10px
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > alturaScrollParaDescer) {
+        menu.classList.add('scrolled');
+      } else {
+        menu.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>
