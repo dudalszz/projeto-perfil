@@ -32,8 +32,7 @@ body {
 }
 
 header.cabecalho {
-  margin-top: 5rem; /* aumenta a distância do topo */
-  /* mantém os estilos existentes */
+  margin-top: 5rem;
   max-width: var(--largura-maxima);
   width: 100%;
   margin-bottom: 3rem;
@@ -73,7 +72,6 @@ header.cabecalho {
   max-width: 600px;
 }
 
-/* Menu fixo com blur */
 nav.menu-navegacao {
   position: fixed;
   top: 0;
@@ -88,7 +86,7 @@ nav.menu-navegacao {
   transition: top 0.3s ease;
 }
 nav.menu-navegacao.scrolled {
-  top: 2rem; /* desce um pouco para não cobrir a foto */
+  top: 2rem;
 }
 
 nav.menu-navegacao ul {
@@ -117,9 +115,9 @@ nav.menu-navegacao a:hover {
   color: var(--cor-destaque-hover);
 }
 
-/* Main */
+
 main.conteudo-principal {
-  margin-top: 6rem; /* espaço para menu fixo e parte da foto */
+  margin-top: 6rem; 
   max-width: var(--largura-maxima);
   width: 100%;
   padding: 0 1rem;
@@ -131,10 +129,10 @@ main.conteudo-principal {
   transition: margin-top 0.3s ease;
 }
 nav.menu-navegacao.scrolled ~ main.conteudo-principal {
-  margin-top: 8rem; /* margem maior quando menu desce */
+  margin-top: 8rem;
 }
 
-/* Sobre */
+
 #sobre {
   background-color: var(--cor-card);
   padding: var(--espacamento-section);
@@ -166,7 +164,7 @@ nav.menu-navegacao.scrolled ~ main.conteudo-principal {
   text-align: justify;
 }
 
-/* Habilidades */
+
 #habilidades {
   width: 100%;
 }
@@ -198,7 +196,6 @@ nav.menu-navegacao.scrolled ~ main.conteudo-principal {
 .fab.fa-git-alt { color: #f1502f; }
 .fas.fa-cloud { color: #00acee; }
 
-/* Projetos */
 #projetos {
   width: 100%;
 }
@@ -249,7 +246,6 @@ nav.menu-navegacao.scrolled ~ main.conteudo-principal {
   line-height: 1.5;
 }
 
-/* Contato */
 #contato {
   width: 100%;
 }
@@ -275,7 +271,6 @@ nav.menu-navegacao.scrolled ~ main.conteudo-principal {
   color: var(--cor-destaque-hover);
 }
 
-/* Redes Sociais */
 .informacoes-extras {
   width: 100%;
   max-width: var(--largura-maxima);
@@ -317,7 +312,6 @@ nav.menu-navegacao.scrolled ~ main.conteudo-principal {
   box-shadow: 0 0 12px var(--cor-destaque);
 }
 
-/* Footer */
 .rodape {
   margin-top: 4rem;
   padding: 1rem 0;
@@ -333,7 +327,6 @@ nav.menu-navegacao.scrolled ~ main.conteudo-principal {
   font-weight: 600;
 }
 
-/* Responsividade */
 @media (max-width: 600px) {
   nav.menu-navegacao ul {
     flex-direction: column;
