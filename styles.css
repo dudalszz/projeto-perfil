@@ -203,8 +203,18 @@ nav.menu-navegacao.scrolled ~ main.conteudo-principal {
   font-family: 'Montserrat', sans-serif;
   color: var(--cor-destaque);
   font-size: 2rem;
-  margin-bottom: 1.5rem;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+#projetos h2 a {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: var(--cor-destaque);
+}
+
+#projetos h2 a:hover {
+  text-decoration: underline;
+  color: var(--cor-destaque-hover);
 }
 .projetos-grid {
   display: grid;
