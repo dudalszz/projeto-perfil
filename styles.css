@@ -176,25 +176,49 @@ nav.menu-navegacao.scrolled ~ main.conteudo-principal {
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 .habilidades-icones {
-  display: flex;
-  justify-content: center;
-  gap: 2.5rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  gap: 1.5rem 2.5rem;
+  max-width: 600px;
+  margin: 1.5rem auto 0;
 }
+
 .habilidades-icones i {
-  font-size: 4rem;
+  font-size: 3.5rem;
   transition: transform 0.3s ease, color 0.3s ease;
   cursor: default;
 }
+
 .habilidades-icones i:hover {
   transform: scale(1.2);
   color: var(--cor-destaque-hover);
+}
+
+.habilidades-icones i:nth-child(9) {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.habilidades-icones i:nth-child(10) {
+  grid-column: 4;
+  grid-row: 2;
 }
 .fab.fa-html5 { color: #e34c26; }
 .fab.fa-css3-alt { color: #1572b6; }
 .fab.fa-js { color: #f7df1e; }
 .fab.fa-git-alt { color: #f1502f; }
 .fas.fa-cloud { color: #00acee; }
+
+.habilidades-icones i.devicon-typescript-plain,
+.habilidades-icones i.devicon-react-original,
+.habilidades-icones i.devicon-mongodb-plain,
+.habilidades-icones i.devicon-python-plain,
+.habilidades-icones i.devicon-nodejs-plain {
+  font-size: 4rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  cursor: default;
+}
 
 #projetos {
   width: 100%;
