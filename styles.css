@@ -338,15 +338,85 @@ nav.menu-navegacao.scrolled ~ main.conteudo-principal {
 }
 
 @media (max-width: 600px) {
+  nav.menu-navegacao {
+    top: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 2rem);
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+  }
+
+  nav.menu-navegacao ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.8rem;
+  }
+
+  nav.menu-navegacao a {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  main.conteudo-principal {
+    margin-top: 9rem;
+  }
+}
+/* Botão do menu hambúrguer */
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: var(--cor-card);
+  border: 2px solid var(--cor-destaque);
+  border-radius: 10px;
+  padding: 0.5rem;
+  z-index: 20;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.menu-toggle:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background: var(--cor-destaque);
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Quando estiver ativo, mostra o menu no mobile */
+.menu-navegacao.ativo {
+  display: flex !important;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 4rem;
+}
+
+/* Mobile: mostra o botão e esconde o menu até clicar */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav.menu-navegacao {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
   nav.menu-navegacao ul {
     flex-direction: column;
     gap: 1rem;
-    padding: 1rem 1.2rem;
-  }
-  .habilidades-icones {
-    gap: 1.5rem;
-  }
-  .projetos-grid {
-    grid-template-columns: 1fr;
   }
 }

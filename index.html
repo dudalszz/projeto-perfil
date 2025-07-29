@@ -11,11 +11,16 @@
 </head>
 <body>
 
-  <header class="cabecalho">
-    <img class="foto-perfil" src="/1749255213275.jpg" alt="Foto de Maria Eduarda Souza" />
-    <h1 class="nome">Maria Eduarda Souza</h1>
-    <p class="slogan">Gestão de Projetos | Paixão por Tecnologia e Inovação</p>
-  </header>
+<header class="cabecalho">
+  <img class="foto-perfil" src="/1749255213275.jpg" alt="Foto de Maria Eduarda Souza" />
+  <h1 class="nome">Maria Eduarda Souza</h1>
+  <p class="slogan">Gestão de Projetos | Paixão por Tecnologia e Inovação</p>
+
+  <button class="menu-toggle" aria-label="Abrir menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
   <nav class="menu-navegacao" id="menu">
     <ul>
@@ -25,6 +30,7 @@
       <li><a href="#contato"><i class="fas fa-envelope"></i> Contato</a></li>
     </ul>
   </nav>
+</header>
 
   <main class="conteudo-principal">
     <section id="sobre" class="bloco">
@@ -124,17 +130,26 @@
     <p>&copy; 2025 <span class="destaque">Maria Eduarda Souza</span>. Todos os direitos reservados.</p>
   </footer>
 
-  <script>
-    const menu = document.getElementById('menu');
-    const alturaScrollParaDescer = 10;
+<script>
+  const toggle = document.querySelector(".menu-toggle");
+  const menu = document.querySelector(".menu-navegacao");
 
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > alturaScrollParaDescer) {
-        menu.classList.add('scrolled');
-      } else {
-        menu.classList.remove('scrolled');
-      }
-    });
-  </script>
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("ativo");
+  });
+</script>
+
+<script>
+  const menuScroll = document.getElementById('menu');
+  const alturaScrollParaDescer = 10;
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > alturaScrollParaDescer) {
+      menuScroll.classList.add('scrolled');
+    } else {
+      menuScroll.classList.remove('scrolled');
+    }
+  });
+</script>
 </body>
 </html>
