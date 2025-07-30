@@ -175,18 +175,34 @@ nav.menu-navegacao.scrolled ~ main.conteudo-principal {
   margin-bottom: 1.5rem;
   text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
+
 .habilidades-icones {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2.5rem;
-  max-width: 800px;
+  justify-items: center;
+  max-width: 500px;
   margin: 0 auto;
+  padding: 1rem;
 }
 
+@media (max-width: 600px) {
+  .habilidades-icones {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    padding: 0.5rem;
+    gap: 1.5rem;
+  }
+
+  /* Último ícone (Node.js) ocupa toda a linha e fica centralizado */
+  .habilidades-icones i.devicon-nodejs-plain {
+    grid-column: 1 / span 2;
+    justify-self: center;
+  }
+}
 
 .habilidades-icones i {
-  font-size: 3.5rem;
+  font-size: 4rem;
   transition: transform 0.3s ease, color 0.3s ease;
   cursor: default;
 }
@@ -196,15 +212,6 @@ nav.menu-navegacao.scrolled ~ main.conteudo-principal {
   color: var(--cor-destaque-hover);
 }
 
-.habilidades-icones i:nth-child(9) {
-  grid-column: 3;
-  grid-row: 2;
-}
-
-.habilidades-icones i:nth-child(10) {
-  grid-column: 4;
-  grid-row: 2;
-}
 .fab.fa-html5 { color: #e34c26; }
 .fab.fa-css3-alt { color: #1572b6; }
 .fab.fa-js { color: #f7df1e; }
@@ -445,3 +452,4 @@ nav.menu-navegacao.scrolled ~ main.conteudo-principal {
     gap: 1rem;
   }
 }
+
