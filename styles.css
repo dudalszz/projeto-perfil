@@ -145,7 +145,7 @@ nav.menu-navegacao.scrolled ~ main.conteudo-principal {
   width: 100%;
 }
 #sobre:hover {
-  box-shadow: 0 12px 36px rgba(138, 43, 226, 0.6);
+  box-shadow: 0 12px 36px rgba(138, 43, 226, 0.6);;
 }
 #sobre h2 {
   font-family: 'Montserrat', sans-serif;
@@ -179,10 +179,11 @@ nav.menu-navegacao.scrolled ~ main.conteudo-principal {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
-  gap: 1.5rem 2.5rem;
-  max-width: 600px;
-  margin: 1.5rem auto 0;
+  gap: 2.5rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
+
 
 .habilidades-icones i {
   font-size: 3.5rem;
